@@ -1,6 +1,7 @@
+// main index.js
 
 import { NativeModules } from 'react-native';
 
-const { RNSenseBeacons } = NativeModules;
+const { SenseBeacons } = NativeModules;
 
-export default RNSenseBeacons;
+export default SenseBeacons;

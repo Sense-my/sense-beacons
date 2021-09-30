@@ -1,0 +1,6 @@
+framework module Pods_SenseBeacons {
+  umbrella header "Pods-SenseBeacons-umbrella.h"
+
+  export *
+  module * { export * }
+}

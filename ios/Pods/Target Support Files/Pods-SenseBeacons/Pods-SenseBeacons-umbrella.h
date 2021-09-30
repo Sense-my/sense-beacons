@@ -11,6 +11,6 @@
 #endif
 
 
-FOUNDATION_EXPORT double Pods_RNSenseBeaconsVersionNumber;
-FOUNDATION_EXPORT const unsigned char Pods_RNSenseBeaconsVersionString[];
+FOUNDATION_EXPORT double Pods_SenseBeaconsVersionNumber;
+FOUNDATION_EXPORT const unsigned char Pods_SenseBeaconsVersionString[];
 
