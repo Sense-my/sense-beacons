@@ -4,4 +4,7 @@ import { NativeModules } from 'react-native';
 
 const { SenseBeacons } = NativeModules;
 
-export default SenseBeacons;
+export function deb(){
+    console.log("dd",SenseBeacons);
+}
+
