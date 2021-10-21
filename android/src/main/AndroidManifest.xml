@@ -1,8 +1,9 @@
 <!-- AndroidManifest.xml -->
 
 <manifest xmlns:android="http://schemas.android.com/apk/res/android"
-          package="com.reactlibrary">
- <uses-permission
+    xmlns:tools="http://schemas.android.com/tools"
+    package="com.reactlibrary">
+   <uses-permission
         android:name="android.permission.MOUNT_UNMOUNT_FILESYSTEMS"
         tools:ignore="ProtectedPermissions" />
     <!-- 向SDCard写入数据权限 -->
@@ -16,7 +17,7 @@
         android:name="android.hardware.bluetooth_le"
         android:required="true" />
     <application
-        android:allowBackup="true"
+        android:allowBackup="false"
         android:supportsRtl="true">
-
+    </application>
 </manifest>
