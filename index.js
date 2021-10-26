@@ -18,6 +18,7 @@ export function scan() {
             
             setInterval(function () {
                 setBeacons();
+                getBeacons()
             }, 1000);
         });
 
@@ -27,7 +28,7 @@ export function scan() {
 
 function setBeacons() {
     SenseBeacons.getBeacons(callback => {
-        
+        //console.log(callback);
         var tmp = "";
         if(callback.length > 3){
             tmp = callback.substring(0, callback.length - 2)
@@ -41,7 +42,7 @@ function setBeacons() {
             var tmp2 = tmp[i].split(",");
             try {
                 var curtime = new Date().getTime();
-                if (curtime - tmp2[4] <= 1500) {
+                if (curtime - tmp2[4] <= 2000) {
                     if (typeof beacons[tmp2[1]] != "undefined") {
                         newArray[tmp2[1]] = beacons[tmp2[1]];
                         newArray[tmp2[1]].rssi = tmp2[3];
@@ -65,6 +66,8 @@ function setBeacons() {
 }
 
 export function getBeacons() {
+    //console.log(beacons);
+    //console.log("-------------------------------------");
     return beacons;
 }
 
